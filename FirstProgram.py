@@ -131,7 +131,7 @@ while i >= 1:
 for item in range(5):
     print(item + 1)
 
-# 15 Program === List
+# 15 Program === List [] // Mutable
 emp = [101, "Vinita", 37, "vinita.bapna9@gmail.com"]
 print(emp)
 
@@ -159,16 +159,42 @@ print(marks)
 
 print(99 in marks)      # True
 print(93 in marks)      # False
-"""
+
 # 16 Program === break and continue
 students = ["ram", "shyam", "varah", "kalki", "vaman"]
-"""
+
 for student in students:
     if student == "kalki":
         break;
     print(student)
-"""
+
 for student in students:
     if student == "varah":
         continue;
     print(student)
+
+# 17 Program === tuple () are used but not compulsory // Immutable
+marks = (95, 98, 97, 97, 97)
+# marks[0] = 99       # TypeError - 'tuple' object does not support item assignment
+print(marks.count(97))  # 3
+print(marks.index(97))  # 2
+
+person = "ram", "sita", "shyam", "radha"
+print(person)
+
+# 18 Program === set {} // unordered, index value can not be considered, value stored in random pattern.
+marks = {95, 98, 97, 97, 97}
+print(marks)        # {97, 98, 95}
+# print(marks[0])     # TypeError - 'set' object is not subscriptable.
+
+for score in marks:
+    print(score)
+
+# 19 Program === dictonary {key:value} // Important
+marks = {"english" : 95, "hindi" : 98}
+print(marks["hindi"])
+marks["maths"] = 96;
+print(marks)
+marks["maths"] = 99;
+print(marks)
+"""
