@@ -197,4 +197,19 @@ marks["maths"] = 96;
 print(marks)
 marks["maths"] = 99;
 print(marks)
+
+# 20 Program === Functions // 3 types- in-built, module, user-defined
+# in-built functions === int(), str(), range(), min(), max()
+# module functions # modules are files consisting several functions
+import random
+print(dir(random))
+
+from math import sqrt
+print(sqrt(16))
+# user-defined functions
 """
+def sum(a, b = 4):
+    print(a + b)
+
+sum(1, 2)
+sum(1)
